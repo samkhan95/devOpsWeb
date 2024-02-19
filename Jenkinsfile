@@ -16,7 +16,8 @@ pipeline {
         stage('Deploy') {
             steps {
                 script {
-                    deployDemo.deploy()
+                    def demoVar = 'Hello World'
+                    deployDemo.deploy(demoVar)
                 }
             }
         }
