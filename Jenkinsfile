@@ -16,7 +16,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 script {
-                    deployDemo()
+                    deployDemo.deploy()
                 }
             }
         }
