@@ -16,8 +16,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 script {
-                    def demoVar = 'Hello World'
-                    deployDemo.deploy(demoVar)
+                    nexusUpload()
                 }
             }
         }
