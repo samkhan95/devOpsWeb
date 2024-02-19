@@ -7,14 +7,14 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    java() // Call the 'java' method from the shared library
+                   build()
                 }
             }
         }
         stage('Deploy') {
             steps {
                 script {
-                    react() // Call the 'react' method from the shared library
+                    deployDemo()
                 }
             }
         }
