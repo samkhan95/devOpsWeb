@@ -7,7 +7,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                   build()
+                   java_build()
                 }
             }
         }
